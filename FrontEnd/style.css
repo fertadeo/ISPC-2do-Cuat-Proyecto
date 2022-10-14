@@ -1,0 +1,20 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+.container{background-color: darkgrey;
+    width: 50%; 
+    height:auto;
+}
+
+.container p,img {
+
+}
+
+.container button { background-color: darkgoldenrod; border-radius: 10px;
+
+}
+
+.container input {border-radius: 10px;
+}

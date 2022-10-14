@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <title>Lovecraft Library</title>
 </head>
+
 <body>
-<h1>Bienvenidos a nuestra biblioteca online</h1>
+    <centre> 
+         <h1>Bienvenidos a nuestra biblioteca online</h1>
+         <div  class="container">
+         <p>Aquí puedes buscar un libro: </p>
+            <form>
+            <label for="titulo">Título del libro <input placeholder="Título del libro" type="text" name="titulo" id="titulo"> </label>
+            <button type= "submit"> Buscar </button>
+            </form>
+
+            <form>
+               <p> Busqueda por género/subgénero</p> 
+               <select>
+                    <option disabled selected="">Seleccione un género</option>
+                    <option>Autoayuda</option>
+                    <option>Aventura</option> 
+                    <option>Ciencia Ficción</option>
+                    <option>Distópico</option>
+                    <option>Drama</option>
+                    <option>Fantasía</option>
+                    <option>Filosofía</option>
+                    <option>Gótico</option>
+                    <option>Historia</option>
+                    <option>Policial</Option>
+                    <option>Romance</option>
+                    <option>Suspenso</option>
+                    <option>Terror</option>
+               </select>
+
+            </form>
+        </div>
+    </centre>
 </body>
+
 </html>
