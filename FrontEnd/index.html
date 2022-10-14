@@ -11,16 +11,19 @@
 
 <body>
     <centre> 
-         <h1>Bienvenidos a nuestra biblioteca online</h1>
+         <h1>Bienvenidos a "Magic Book Library" online</h1>
          <div  class="container">
-         <p>Aquí puedes buscar un libro: </p>
+           <img src="C:\Users\gabri\Desktop\GITHUB Proyecto 2  cuatrimestre 2\ISPC-2do-Cuat-Proyecto\FrontEnd\magic_book_round_logo.png" width:500px; height:500px; alt="logo biblioteca">
+         <p>Busca tu libro!</p>
+         </div>
             <form>
-            <label for="titulo">Título del libro <input placeholder="Título del libro" type="text" name="titulo" id="titulo"> </label>
+            <label for="titulo"><input placeholder="Título del libro/Autor" type="text" name="titulo" id="titulo"> </label>
             <button type= "submit"> Buscar </button>
             </form>
 
             <form>
-               <p> Busqueda por género/subgénero</p> 
+               <p>Filtros</p> 
+               <div  class="container2">
                <select>
                     <option disabled selected="">Seleccione un género</option>
                     <option>Autoayuda</option>
@@ -38,6 +41,49 @@
                     <option>Terror</option>
                </select>
 
+             <select>
+                <option disabled selected="">Año de edición</option>
+                <option>1700 - 1800</option>
+                <option>1800 - 1900</option>
+                <option>1900 - 2000</option> 
+                <option>2000 - 2022</option>
+           </select>
+
+        <select>
+            <option disabled selected="">Editorial</option>
+            <option>Alfaguara</option>
+            <option>Altea</option>
+            <option>Areté</option>
+            <option>Beascoa</option>
+            <option>Caballo de Troya</option>
+            <option>Collins</option>
+            <option>Debate</option>
+            <option>DeBolsillo
+            <option>Del Fondo Editorial</option>
+            <option>Editorial Espasa</option>
+            <option>Electa</option>
+            <option>Fantacsy</option>
+            <option>Flash</option>
+            <option>Fontanar</option>
+            <option>Grijalbo</option>
+            <option>Grupo Planeta</option>
+            <option>Harper Collins</option>
+            <option>Literatura Random House</option>
+            <option>Lumen</option>
+            <option>Montena</option>
+            <option>Nube de Tinta</option>
+            <option>Objetiva</option>
+            <option>Oxford University Press</option>
+            <option>Pearson</option>
+            <option>Penguin</option>
+            <option>Plaza & Janés</option>
+            <option>Punto de Lectura</option>
+            <option>Rosa dels Vents</option>
+            <option>Santillana</option>
+            <option>Scholastics</option>
+            <option>Suma de Letras</option>
+            <option>Taurus</option>
+       </select>
             </form>
         </div>
     </centre>
