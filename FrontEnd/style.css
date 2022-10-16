@@ -1,17 +1,14 @@
-/* h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:black
-}
-
-.container{border-radius:10px; background-color: #BD9D5F;
+.container {
     width: 100%; 
-    height:auto;
-}
-.container button {border-radius:10px; background-color: #2C4B4D;
+    height:auto ;
+    background-color:#345457;
+    display: flex;
+  justify-content: space-around;
+    flex-direction: row;
 }
 
-.container input {border-radius:10px;
+.container p{
+    margin: 10px;
+    color:#BEA573;
+    font-weight: 400;
 }
-
-.container2 {border-radius:10; background-color: #D9D9D9;
-} */
