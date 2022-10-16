@@ -1,3 +1,4 @@
+
 .container {
     width: 100%; 
     height:auto ;
@@ -11,4 +12,8 @@
     margin: 10px;
     color:#BEA573;
     font-weight: 400;
+
+.magicb {
+    background-color: #BEA573; 
+
 }
