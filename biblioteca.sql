@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-10-2022 a las 22:22:53
+-- Tiempo de generación: 17-10-2022 a las 19:14:13
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -33,7 +33,6 @@ CREATE TABLE `autores` (
   `Nombres` varchar(50) NOT NULL,
   `FechaNacim` date NOT NULL,
   `CodLugarNacim` bigint(20) DEFAULT NULL,
-  `CodLugarActual` bigint(20) NOT NULL,
   `Mail` varchar(100) NOT NULL,
   `FechaMuerte` date DEFAULT NULL,
   `Estudios` varchar(150) DEFAULT NULL
@@ -124,6 +123,7 @@ CREATE TABLE `libros` (
 --
 
 CREATE TABLE `localidades` (
+  `CodProv` int(11) NOT NULL,
   `CodLocalidad` bigint(20) NOT NULL,
   `NombreLocalidad` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -160,6 +160,7 @@ CREATE TABLE `prestamos` (
 --
 
 CREATE TABLE `provinciasestados` (
+  `CodPais` smallint(6) NOT NULL,
   `CodProv` int(11) NOT NULL,
   `NombreProvinca` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -251,7 +252,8 @@ ALTER TABLE `libros`
 -- Indices de la tabla `localidades`
 --
 ALTER TABLE `localidades`
-  ADD PRIMARY KEY (`CodLocalidad`);
+  ADD PRIMARY KEY (`CodLocalidad`),
+  ADD KEY `Rel-Localidad-Prov` (`CodProv`);
 
 --
 -- Indices de la tabla `paises`
@@ -271,7 +273,8 @@ ALTER TABLE `prestamos`
 -- Indices de la tabla `provinciasestados`
 --
 ALTER TABLE `provinciasestados`
-  ADD PRIMARY KEY (`CodProv`);
+  ADD PRIMARY KEY (`CodProv`),
+  ADD KEY `Rel-Prov-Paises` (`CodPais`);
 
 --
 -- Indices de la tabla `tiene`
@@ -328,11 +331,23 @@ ALTER TABLE `libros`
   ADD CONSTRAINT `Rel-Libro-TipoCubierta` FOREIGN KEY (`CodTipoCubierta`) REFERENCES `tipocubierta` (`CodTipoCubierta`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Filtros para la tabla `localidades`
+--
+ALTER TABLE `localidades`
+  ADD CONSTRAINT `Rel-Localidad-Prov` FOREIGN KEY (`CodProv`) REFERENCES `provinciasestados` (`CodProv`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Filtros para la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
   ADD CONSTRAINT `Rel-Prestamos-Clientes` FOREIGN KEY (`DNICliente`) REFERENCES `clientes` (`DNI`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `Rel-Prestamos-Libros` FOREIGN KEY (`ISBNLibro`) REFERENCES `libros` (`ISBN`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `provinciasestados`
+--
+ALTER TABLE `provinciasestados`
+  ADD CONSTRAINT `Rel-Prov-Paises` FOREIGN KEY (`CodPais`) REFERENCES `paises` (`CodPais`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `tiene`
