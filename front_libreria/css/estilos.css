@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover{
+  color:#bea573;
+  }
+
+body {
+
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-family: 'Roboto', sans-serif
+}
+
+a {
+  color: white;
+}
+
+ul {
+margin-bottom: 0;
+padding-left: 0;
+}
+
+.div{
+display: flex;
+flex-direction: column;
+}
+
+.banner boton{
+align-self: flex-end;
+}
+
+.banner_parrafo{
+align-self: flex-end;
+}
+
+.nav__lista {
+list-style: none;
+display: flex;
+flex-direction: row;
+}
+
+.nav__item {
+margin-left: 2rem;
+}
+
+.nav__enlace {
+text-decoration: none;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  color:white;
+  border: white;
+  }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+ }
+ 
+.banner {
+background-image: url(../img/banner.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom center;
+padding: 145px 4rem;
+color: #000000;
+background-attachment: fixed;
+text-align: right;
+position: relative;
+}
+
+.banner__titulo {
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+
+.banner__parrafo {
+font-size: 1.4rem;
+margin-bottom: 2rem;
+max-width: 1200px;
+color: rgb(0, 0, 0);
+font-weight: 600;
+}
+
+.banner__boton {
+background-color: #3B5B5E;
+color: #ffffff;
+text-transform: uppercase;
+padding: 1rem 2rem;
+border-radius: 100px;
+text-decoration: none;
+font-weight: 700;
+}
+
+.position-fixed {
+  background-color:#000000;
+  color:#ffffff;
+  font-size: 32px;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100%;
+background-color: #3B5B5E;
+min-height: 100px;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+}
+
+.navbar{
+--bs-bg-opacity: 1;
+background-color:  #3B5B5E;
+--bs-navbar-active-color: #f9fafb;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color:#bea573;}
+  
+.footer {
+  background-color: #3B5B5E;
+  color: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+}
+
+.container-fluid {
+overflow: hidden;
+}
+
+.contacto1 {
+padding-top: 150px;
+padding-bottom: 30px;
+text-align: left;
+}
+
+.contacto2 {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  text-align: center;
+  }
+
+.container-fluid {
+overflow: hidden;
+}
+
+.top10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;  
+  background-color:rgb(200, 200, 200);
+  color:#000000;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.form {
+  background-color: #efefef;
+  padding: 32px;
+  margin: 0 0 0px;
+  border-radius: 3px;
+  text-align: center;
+ 
+}
+
+.btn-green-cta {
+  background-color: #3B5B5E
+}
+
+@media (max-width: 1023px) {
+.inicio1 {
+    background-color: #3B5B5E;
+    flex-direction: column;
+    align-items: center;
+}
+.inicio1__textos {
+    margin-bottom: 20px;
+}
+.inicio1__picture {
+    width: 100%;
+}
+.inicio1__picture img {
+    object-position: top center;
+}
+
+.header img {
+    width: 100px;
+    object-fit: unset;
+}
+.inicio2 {
+    color: #fff;
+}
+.footer__logo {
+    width: 100px;
+}
+}
+
+
+/* Movil */
+@media (max-width: 600px) {
+.inicio1 {
+    background-color:#3B5B5E;
+    padding: 4rem 1rem;
+}
+.inicio1__textos, .inicio1__picture {
+    width: 100%;
+}
+img, iframe, video {
+    width: -webkit-fill-available;
+    align-items: center;
+}
+.inicio1__titulo {
+    font-size: 2rem;
+}
+.header {
+    flex-direction: column;
+    justify-content: center;
+}
+.header img {
+    height: 56px;
+    width: auto;
+}
+.nav__lista {
+    gap: 10px;
+}
+.nav__item {
+    margin-left: 0;
+}
+
+.contacto1 {
+  padding-top: 115px;
+  padding-bottom: 30px;
+  }
+
+.contacto2 {
+padding-top: 115px;
+padding-bottom: 30px;
+text-align:-webkit-center;
+}
+
+
+
+
+}
+.servicios1__titulo {
+    font-size: 28px;
+}
+.servicios1__padre {
+    flex-direction: column;
+    align-items: center;
+}
+.servicios1__img {
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+
+.espacio{
+  width: 100px;
+  height: 100px;
+}
+
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: ##BEA573; 
+  --bs-btn-border-color: ##BEA573;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: ##BEA573;
+  --bs-btn-hover-border-color: ##BEA573;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #080808;
+  --bs-btn-active-border-color: #BEA573;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: ##BEA573;
+  --bs-btn-disabled-border-color: #BEA573
+}
+
+.btn {
+  color:#ffffff;
+  background-color: #3B5B5E;
+}
+
+.btn:hover {
+  background-color: #bea573;
+}
+
+
+@media(max-width:1023px){
+  
+  .servicios1__padre img{
+    width: 40%;
+    height: auto;
+  }
+
+  .footer__flex img{
+    width: 50%;
+    height: auto;
+  }
+
+  .footer__lista{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .espacio{
+    width: 0px;
+    height: 0px;
+  }
+
+}
+
+@media(max-width:600px){
+  .footer p{
+    text-align: left;
+  }
+  
+  .servicios1__padre img{
+    width: 100%;
+  }
+
+  .footer__flex img{
+    width: 50%;
+    height: auto;
+    align-items: center;
+  }
+
+  .footer__lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .espacio{
+    width: 0px;
+    height: 0px;
+  }
+  }
+
+
+ /* login */
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #BEA573;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #BEA573, rgba(143, 211, 244, 0.5));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3B5B5E, rgba(143, 211, 244, 0.5))
+  }
+  .gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #3B5B5E;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #3B5B5E, rgba(143, 211, 244, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3B5B5E, rgba(143, 211, 244, 1))
+  }
