@@ -1,19 +1,16 @@
-
-.container {
-    width: 100%; 
-    height:auto ;
-    background-color:#345457;
-    display: flex;
-  justify-content: space-around;
-    flex-direction: row;
+background-color: {
 }
 
-.container p{
-    margin: 10px;
-    color:#BEA573;
-    font-weight: 400;
+.boton {
+    background-color: #2C4B4D;
+}
 
-.magicb {
-    background-color: #BEA573; 
+.encabezado {
+    background-color: #BEA573;
+}
 
+.boton {
+}
+
+.boton {
 }
