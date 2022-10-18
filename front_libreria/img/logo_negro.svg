@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="14" viewBox="0 0 37 14">
+  <g id="Grupo_2" data-name="Grupo 2" transform="translate(-187 -261)">
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(187 261)">
+      <text id="LIBRARY" transform="translate(0 10)" font-size="9" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">LIBRARY</tspan></text>
+      <text id="BOOK" transform="translate(11 13)" font-size="3" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.6em"><tspan x="0" y="0">BOOK</tspan></text>
+      <rect id="Rectángulo_1" data-name="Rectángulo 1" width="9" height="2" transform="translate(1 11)"/>
+      <rect id="Rectángulo_3" data-name="Rectángulo 3" width="9" height="2" transform="translate(26 11)"/>
+    </g>
+  </g>
+</svg>
