@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="administracion.css">
     <title>Magic Book Library - Administración</title>
   </head>
   <body>
@@ -14,16 +14,72 @@
           <a class="navbar-brand"> Magic Book Library - Administración </a>
           <form class="d-flex">
             <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-primary" type="submit">Buscar</button>
+            <button class="btn btn-magic" type="submit">Buscar</button>
           </form>
         </div>
       </nav>
+<div class="table">
 
 
+</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+  <div class="botonesCategoria">
+    
+
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+      <label class="btn btn-outline-danger" for="btnradio1">Clientes</label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-success" for="btnradio2">Stock</label>
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-warning" for="btnradio3">Caja</label>
+    </div>
 
 
- <footer>
-    <div class="container">
+  </div>
+
+  <div class="form"> 
+
+    <input class="form-input" type="text" placeholder="Escribe algo...">
+
+    <button type="submit" class="btn btn-magic" > Buscar </button>
+    <button type="submit" class="btn btn-magic" > Modificar </button>
+  </div>
+
+
+    <div class="footer">
       <div>
         <p>Legal warning</p>
         <p>Privacy policy</p>
@@ -38,7 +94,7 @@
       </div>
 
     </div>
-   </footer>
+
 
 
 
