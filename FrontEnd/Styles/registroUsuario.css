@@ -7,7 +7,7 @@ body{
     -o-background-size: cover;
     -ms-background-size: cover;
     background-position: center center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #logo{
