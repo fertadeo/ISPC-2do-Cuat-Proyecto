@@ -1,5 +1,5 @@
 body{
-    background-image: url("fondoRegistroUsuarioPequeña.jpg");
+    background-image: url("../assets/fondoRegistroUsuario.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     -moz-background-size: cover;
@@ -12,6 +12,8 @@ body{
 
 #logo{
     margin: 20px 20px;
+    width: 150px;
+    height: 150px;
 }
 
 .row{
