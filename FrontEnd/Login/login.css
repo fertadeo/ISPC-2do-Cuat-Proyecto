@@ -1,0 +1,18 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(https://www.eleconomista.com.mx/__export/1618813105696/sites/eleconomista/img/2021/04/19/libros2.jpg_1902800913.jpg);
+}
+
+
+
+#caja{
+    margin: 2rem 2rem !important;
+}    
+
+#login-box{
+    background: #3B5B5E !important;
+}
