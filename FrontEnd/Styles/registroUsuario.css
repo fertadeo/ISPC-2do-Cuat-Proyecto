@@ -17,7 +17,7 @@ body{
 }
 
 .row{
-    background-color: rgb(185, 185, 185);
+    background-color: #D9D9D9;
     border-radius: 15px;
     padding: 25px;
 
@@ -27,7 +27,16 @@ p{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    color: rgb(5, 51, 5);
+    color: #2C4B4D;
+}
+
+#boton{
+    background-color: #2C4B4D;
+    border-color: #2C4B4D;
+}
+
+#boton2{
+    color: #2C4B4D;
 }
 
 #datos{
