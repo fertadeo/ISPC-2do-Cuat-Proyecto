@@ -1,20 +1,57 @@
-
-.container {
-    width: 50%; 
-    height:auto ;
-    background-color:#3B5B5E;
-    display: flex;
-  justify-content: space-around;
-    flex-direction: row;
+body{
+    background-image: url("../assets/fondoRegistroUsuario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container p{
-    margin: 10px;
-    color:#BEA573;
-    font-weight: 400;
+#logo{
+    margin: 20px 20px;
+    width: 150px;
+    height: 150px;
 }
 
-.magicb {
-    background-color: #BEA573; 
-    height: 60%;
+.row{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #2C4B4D;
+}
+
+#boton{
+    background-color: #2C4B4D;
+    border-color: #2C4B4D;
+}
+
+#boton2{
+    color: #2C4B4D;
+}
+
+#datos{
+    margin: 8px;
+}
+
+
+#top, #base, #base2{
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+}
+  
+@media screen and (max-width: 768px) {
+    .container {
+      width: calc(100% - 40px);
+      max-width: 100%; }
 }
