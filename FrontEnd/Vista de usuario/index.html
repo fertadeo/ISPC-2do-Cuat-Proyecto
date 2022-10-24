@@ -15,6 +15,11 @@
     <!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
        <script src="https://kit.fontawesome.com/0522ff4f8b.js" crossorigin="anonymous"></script>
+    
+    <!-- Vinculacion con fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
      
 </head>
 
@@ -46,29 +51,45 @@
           </div>
         </nav>     
       </header>
-            <main class="main">
-                <section class="banner">
-                    <div>
-                        <h2 class="banner__titulo">Librería Internacional</h2>
-                        <p class="banner__parrafo">Autoayuda | Autobiográficos | Arte | Arquitectura | Bélico | Cómic | Colecciones | Infantiles | Ficción | Historia | Novelas | Bestseller  | Poemas | Tecnología | Terror |</p>
-                        <a class="banner__boton" href="libreria.html">Explorar Biblioteca</a>
-                    </div>
-                </section>
-                <a href="https://wa.me/1122559988" class="position-fixed" target="_blank">
-                    <span class="jam jam-whatsapp"></span>
-                </a>
-            </main>
+          <main class="main">
+            <section class="banner">
+                <div>
+                    <h2 class="banner__titulo">Librería Internacional</h2>
+                    <p class="banner__parrafo">Autoayuda | Autobiográficos | Arte | Arquitectura | Bélico | Cómic | Colecciones | Infantiles | Ficción | Historia | Novelas | Bestseller  | Poemas | Tecnología | Terror |</p>
+                    <a class="banner__boton" href="libreria.html">Explorar Biblioteca</a>
+                </div>
+            </section>
+            <a href="https://wa.me/1122559988" class="position-fixed" target="_blank">
+                <span class="jam jam-whatsapp"></span>
+            </a>
+          </main>
 
-
-       
-          <section class="buscar">
+         <section class="buscar">
             <div class="container">
             <div class="row">
               <div class="col-lg-6 -md-4">
               <p><h3>Buscar por Categorías</h3></p>
               <nav class="navbar navbar-white bg-white">
                 <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar por Categorías" aria-label="Search">
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Acción</option>
+                    <option value="2">Animación</option>
+                    <option value="3">Aventura</option>
+                    <option value="4">Bélico Guerra</option>
+                    <option value="5">Biográfia</option>
+                    <option value="6">Ciencia Ficción</option>
+                    <option value="7">Comedia</option>
+                    <option value="8">Crimen</option>
+                    <option value="9">Documentales</option>
+                    <option value="10">Drama</option>
+                    <option value="11">Familiar</option>
+                    <option value="12">Fantasía</option>
+                    <option value="13">Misterio</option>
+                    <option value="14">Romance</option>
+                    <option value="15">Terror</option>
+                    <option value="16">Thriller</option>
+                  </select>
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
               </nav>
@@ -112,31 +133,28 @@
                     </tr>
                     <tr>
                       <th scope="row">6</th>
-                      <th>El Señor de los Anillos(saga)</th>
-                      <th>J.R.R. Tolkein</th>
+                      <td>El Señor de los Anillos(saga)</td>
+                      <td>J.R.R. Tolkein</td>
                     </tr>
                     <th scope="row">7</th>
-                    <th>El alquimista</th>
-                    <th>Paulo Coelho</th>
+                    <td>El alquimista</td>
+                    <td>Paulo Coelho</td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
-                      <th>Cien años de soledad</th>
-                      <th>Gabriel García Marquez</th>
+                      <td>Cien años de soledad</td>
+                      <td>Gabriel García Marquez</td>
                     </tr>
                     <tr>
                       <th scope="row">10</th>
-                      <th>El Perfume </th>
-                      <th>Patrik Süskind</th>
+                      <td>El Perfume </td>
+                      <td>Patrik Süskind</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </section>          
-
-
-
 
           <section class="Newsletter">
             <form class="form" action="#" method="post" target="_blank">
