@@ -1,7 +1,33 @@
 img {
-    width500px ;
-    height: 50px;
+    width: 150px ;
+    height: 150px;
+    padding: 20px;
+    float: right;
 }
 .magicb {
     background-color:#BEA573; 
+}
+
+
+.footer {
+    width: 100%; 
+    height: 50%;
+    background-color:#345457;
+    display: flex;
+  justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer p{
+  
+    color:#BEA573;
+    font-weight: 400;
+}
+
+div.map {
+    background-color: cornsilk;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    float: right;
 }
