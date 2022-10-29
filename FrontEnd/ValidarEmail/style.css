@@ -1,6 +1,5 @@
-* {
-    font-family: 'Roboto', sans-serif;
-  }
+background-color: {
+}
 
 .boton {
     background-color: #2C4B4D;
@@ -8,4 +7,22 @@
 
 .encabezado {
     background-color: #BEA573;
+}
+
+.boton {
+}
+
+.boton {
+}
+
+.ColorNav {
+    background-color: #BEA573;
+}
+
+.FooterColor {
+    background-color: #345457;
+}
+
+.ColorFuente {
+    color: #bea573;
 }
