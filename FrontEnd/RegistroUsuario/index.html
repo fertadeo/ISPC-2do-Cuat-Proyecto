@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="../RegistroUsuario/assets/magic_book_round_logo.png" id="logo" alt="Logo de la Libreria" title="Magic Book Libreria">
+        <img src="../assets/magic_book_round_logo.png" id="logo" alt="Logo de la Libreria" title="Magic Book Libreria">
     </header>
 
     <div class="container" style="height:80vh;width:30vw;">
@@ -18,24 +18,28 @@
             <div id="top">
                 <p>CREA TU CUENTA GRATUITA</p>
             </div>
-            <div id="formulario">
+            <div id="formula">
+                <form name="formulario">
                     <div id="datos">
-                        <input type="text" class="form-control" placeholder="NOMBRE">
+                        <input type="text" id="nombre" class="form-control" placeholder="NOMBRE" required>
                     </div>
                     <div id="datos">
-                        <input type="text" class="form-control" placeholder="APELLIDO">
+                        <input type="text" id="apellido" class="form-control" placeholder="APELLIDO" required>
                     </div>
                     <div id="datos">
-                        <input type="text" class="form-control" placeholder="NOMBRE DE USUARIO">
+                        <input type="text" id="usuario" class="form-control" placeholder="NOMBRE DE USUARIO" required 
+                        pattern="[A-Za-z0-9]{6,12}" title="Letras y números. Minimo 6 y máximo 10.">
                     </div>
                     <div id="datos">
-                        <input type="text" class="form-control" placeholder="CORREO ELECTRONICO">
+                        <input type="text" id="correo" class="form-control" placeholder="CORREO ELECTRONICO" required>
                     </div>
                     <div id="datos">
-                        <input type="password" class="form-control" placeholder="CONTRASEÑA">
+                        <input type="password" id="contraseña" class="form-control" placeholder="CONTRASEÑA" requiered
+                        minlength="8" pattern="[A-Za-z0-9]+">
                     </div>
                     <div id="datos">
-                        <input type="password" class="form-control" placeholder="CONFIRMAR CONTRASEÑA">
+                        <input type="password" id="repiContraseña" class="form-control" placeholder="CONFIRMAR CONTRASEÑA" required
+                        minlength="8" pattern="[A-Za-z0-9]+">
                     </div>
             </div>
             <div id="base">
@@ -44,8 +48,10 @@
             <div id="base2">
                 <button type="button" id="boton2" class="btn btn-link">YA TENGO UNA CUENTA</button>
             </div>
+            </div>
         </div>
-        
     </div>  
+
+    <script src="js/script.js"></script>
 </body>
 </html>
