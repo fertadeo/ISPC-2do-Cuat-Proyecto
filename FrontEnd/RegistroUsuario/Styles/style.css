@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     background-image: url("../assets/fondoRegistroUsuario.jpg");
     background-repeat: no-repeat;
@@ -43,16 +47,10 @@ p{
     margin: 8px;
 }
 
-
 #top, #base, #base2{
     align-content: center;
     text-align: center;
     padding: 5px;
-}
-
-.error{
-  font-size: 14.5px;
-  margin-top: 5px;
 }
   
 @media screen and (max-width: 768px){
