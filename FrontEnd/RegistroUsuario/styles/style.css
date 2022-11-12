@@ -47,14 +47,13 @@ p{
     margin: 8px;
 }
 
-
 #top, #base, #base2{
     align-content: center;
     text-align: center;
     padding: 5px;
 }
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .container {
       width: calc(100% - 40px);
       max-width: 100%; }
