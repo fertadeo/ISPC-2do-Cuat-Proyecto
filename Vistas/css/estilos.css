@@ -1,12 +1,12 @@
 * {
-  padding: 0;
+ 
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
 text-decoration: none;
-color: white;
 }
 
 a:hover{
@@ -20,6 +20,13 @@ body {
   font-family: 'Roboto', sans-serif
 }
 
+html {
+  overflow-x: hidden; 
+}
+
+a {
+  color: white;
+}
 
 ul {
 margin-bottom: 0;
@@ -72,7 +79,7 @@ background-image: url(../img/banner.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: bottom center;
-padding: 145px 4rem;
+padding: 104px 4rem;
 color: #000000;
 background-attachment: fixed;
 text-align: right;
@@ -115,8 +122,8 @@ font-weight: 700;
   text-decoration: none;
 }
 
+
 .header {
-position: fixed;
 top: 0;
 left: 0;
 z-index: 100;
@@ -128,6 +135,10 @@ align-items: center;
 padding: 0 2rem;
 }
 
+.carrusel{
+  overflow: hidden;
+}
+
 .navbar{
 --bs-bg-opacity: 1;
 background-color:  #3B5B5E;
@@ -137,27 +148,22 @@ background-color:  #3B5B5E;
 .nav-link:focus, .nav-link:hover {
   color:#bea573;}
   
-.footer {
-  background-color: #3B5B5E;
-  color: rgb(255, 255, 255);
-  padding: 2rem 1rem;
-}
 
 .container-fluid {
 overflow: hidden;
 }
 
 .contacto1 {
-padding-top: 150px;
+padding-top: 38px;
 padding-bottom: 30px;
 text-align: left;
 }
 
 .contacto2 {
-  padding-top: 130px;
+  padding-top: 38px;
   padding-bottom: 30px;
   text-align: center;
-  }
+  }r
 
 .container-fluid {
 overflow: hidden;
@@ -169,6 +175,7 @@ overflow: hidden;
   justify-content: center;
   min-height: 5vh;  
   background-color:rgb(200, 200, 200);
+  color:#000000;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -178,6 +185,7 @@ overflow: hidden;
   margin: 0 0 0px;
   border-radius: 3px;
   text-align: center;
+ 
 }
 
 .btn-green-cta {
@@ -207,11 +215,16 @@ overflow: hidden;
 .inicio2 {
     color: #fff;
 }
-.footer__logo {
-    width: 100px;
-}
 }
 
+.bg-black {
+  background-color: #3B5B5E !important;
+}
+
+.buscar{
+  background: #B5B2B2;
+  padding: auto;
+}
 
 /* Movil */
 @media (max-width: 600px) {
@@ -223,7 +236,6 @@ overflow: hidden;
     width: 100%;
 }
 img, iframe, video {
-    width: -webkit-fill-available;
     align-items: center;
 }
 .inicio1__titulo {
@@ -268,10 +280,16 @@ text-align:-webkit-center;
     height: 100px;
 }
 
+.card {
+    margin-bottom: 2rem;
+}
+
+
 .espacio{
   width: 100px;
   height: 100px;
 }
+
 
 .btn-primary {
   --bs-btn-color: #fff;
@@ -333,19 +351,91 @@ text-align:-webkit-center;
     width: 100%;
   }
 
-  .footer__flex img{
-    width: 50%;
-    height: auto;
-    align-items: center;
-  }
-
-  .footer__lista{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
   .espacio{
     width: 0px;
     height: 0px;
   }
   }
+
+
+
+  /* Footer */
+
+footer{
+    margin-top: 8px;
+    color: #fff;
+    background-color: #3B5B5E;
+  }
+
+footer a { color: #ffffff;}
+footer a:hover { color: #000000;}
+footer ul.footer-link-list li { padding-top: 10px;}
+footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+footer ul.footer-icons li:hover {
+  background-color: #000000;
+  transition: .5s;
+}
+footer ul.footer-icons li:hover i {
+  color: #005fe4;
+  transition: .5s;
+}
+footer .border-light { border-color: #ffffff !important;}
+
+.container .swiper-container{
+  width: 100%;
+  height: 100%;
+}
+.container .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: rgb(253, 253, 253);
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+ 
+}
+.container .swiper-slide img{
+   display: block;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.container .swiper-slide .card-description{
+    padding:1rem 1rem;
+}
+.container .swiper-slide .card-title,.container .swiper-slide .card-text{
+   margin-bottom: .5rem;
+}
+.container .swiper-slide .card-link{
+   text-align: center;
+  
+}
+.container .swiper-slide .card-link a{
+    text-decoration: none;
+    color: #000000;
+}
+.swiper-button-next{
+    right: 26px !important;
+}
+.swiper-button-prev{
+    left: 26px !important;
+}
+
+  /*Carrusel_inicio */
+
+  
+
+.swiper-button-next_{
+    right: 26px !important;
+}
+.swiper-button-prev_{
+    left: 26px !important;
+}

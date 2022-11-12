@@ -15,124 +15,311 @@
     <!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
        <script src="https://kit.fontawesome.com/0522ff4f8b.js" crossorigin="anonymous"></script>
-     
+    
+    <!-- Vinculacion con fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid"><a class="navbar-brand">
-              <img src="img/logotipo-blanco.svg" alt="logotipo" width="294" height="82" href="http://www.index.html" class="logo d-inline-block align-text-top" width="280" height="100"></a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="libreria.html">Librería</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quienes_somos.html">Quiénes somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-              
-            </div>
-          </div>
-        </nav>     
-      </header>
-            <main class="main">
-                <section class="banner">
-                    <div>
-                        <h2 class="banner__titulo">Librería Internacional</h2>
-                        <p class="banner__parrafo">Autoayuda | Autobiográficos | Arte | Arquitectura | Bélico | Cómic | Colecciones | Infantiles | Ficción | Historia | Novelas | Bestseller  | Poemas | Tecnología | Terror |</p>
-                        <a class="banner__boton" href="libreria.html">Biblioteca</a>
-                    </div>
-                </section>
-                <a href="https://wa.me/1122559988" class="position-fixed" target="_blank">
-                    <span class="jam jam-whatsapp"></span>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid"><a class="navbar-brand">
+            <img src="img/logo.svg" alt="logotipo" href="index.html" class="logo d-inline-block align-text-top" width="300" height="100"></a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="libreria.html">Librería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes_somos.html">Quiénes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item m-2">
+              <form class="d-flex">
+                <a href="login.html" class="user"> <i class="fas fa-user px-3 "></i></li>
+                <li class="nav-item m-2"><a href="#" class="cart">
+                    <i class="fas fa-cart-shopping px-3"></i></a></li>
                 </a>
-            </main>
-
-
-       
-          <section class="buscar">
-            <div class="container">
-            <div class="row">
-              <div class="col-lg-6 -md-4">
-              <p><h3>Buscar por Categorías</h3></p>
-              <nav class="navbar navbar-white bg-white">
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar por Categorías" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-              </nav>
-              </div>
-            </div>
+              </form>   
           </div>
-          </section>
+        </div>
+      </nav>          
+</header>
+<!-- Close Header -->
+
+
+          <main class="main">
+            <section class="banner">
+                <div>
+                    <h1 class="banner__titulo">Librería Internacional</h1>
+                    <p class="banner__parrafo">Autoayuda | Autobiográficos | Arte | Arquitectura | Bélico | Cómic | Colecciones | Infantiles | Ficción | Historia | Novelas | Bestseller  | Poemas | Tecnología | Terror |</p>
+                    <a class="banner__boton" href="libreria.html">Explorar</a>
+                </div>
+            </section>
+            <a href="https://wa.me/1122559988" class="position-fixed" target="_blank">
+                <span class="jam jam-whatsapp"></span>
+            </a>
+          </main>
+
+
+    <!-- Start Section Carrusel-->
+<section class="carrusel">
+  <div class="container">
+      <p><h5>Novedades Noviembre 2022</h5></p>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-container mySwiper">
+       
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="img/9788466672474.jpg" alt=""  width="100" height="200";>
+                  <div class="card-description">
+                      <div class="card-title">
+                          <h5>TODO ARDE</h5><h6>JUAN GOMEZ JURADO</h6>
+                      </div>
+                      <div class="card-text">
+                      </div>
+                      <div class="card-link">
+                        <button href="#" class="btn btn-secondary">Ver más</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="img/9788418483196.jpg"alt="" width="100" height="200";>
+                  <div class="card-description">
+                      <div class="card-title">
+                          <h5>LLUVIA</h5>
+                          <h6>ARIANA GODOY</h6>
+                      </div>
+                      <div class="card-text">
+                      </div>
+                      <div class="card-link">
+                        <button href="#" class="btn btn-secondary">Ver más</button>     
+                      </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/9788413627274.jpg"alt="" width="100" height="200";>
+                  
+              <div class="card-description">
+                  <div class="card-title">
+                      <h5>LAS HORAS</h5>
+                      <h6>MICHAEL CONNELLY</h6>
+                  </div>
+                  <div class="card-text">
+                     
+                  </div>
+                  <div class="card-link">
+                    <button href="#" class="btn btn-secondary">Ver más</button>
+                  </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/9788408265603.jpg" alt="" width="100" height="200";>
+              <div class="card-description">
+                  <div class="card-title">
+                      <h5>LEJOS DE LUISIANA</h5>
+                      <h6>LUZ GABAS</h6>
+                  </div>
+                  <div class="card-text">
+                  </div>
+                  <div class="card-link">
+                    <button href="#" class="btn btn-secondary">Ver más</button>
+                  </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/9788466672849.jpg" alt="" width="100" height="200";>
+              <div class="card-description">
+                  <div class="card-title">
+                      <h5>TUTANKHAMON</h5>
+                      <h6>ANTONIO CABANAS</h6>
+                  </div>
+                  <div class="card-text">
+                  </div>
+                  <div class="card-link">
+                    <button href="#" class="btn btn-secondary">Ver más</button>
+                  </div>
+              </div>
+          </div>
+             
+              <div class="swiper-slide">
+                  <img src="img/9788408265610.jpg"alt="" width="100" height="200";>
+              <div class="card-description">
+                  <div class="card-title">
+                      <h5>MUJERES CASADAS</h5>
+                      <h6>CRISTINA CAMPOS</h6>
+                  </div>
+                  <div class="card-text">
+                  </div>
+                  <div class="card-link">
+                    <button href="#" class="btn btn-secondary">Ver más</button>
+                  </div>
+              </div>
+          </div>
+          </div>
+          </div>       
+      </div>
+  </div>
+</section>
+ <!-- End Section -->
+
+
+
+    <!-- Start Section -->
+    <section class="container py-5">
+      <div class="row text-center pt-5 pb-3">
+          <div class="col-lg-6 m-auto">
+              <h2>Nuestros Servicios</h2>
+          </div>
+      </div>
+      <div class="row">
+
+          <div class="col-md-6 col-lg-3 pb-5">
+              <div class="h-100 py-5 services-icon-wap shadow">
+                  <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                  <h2 class="h5 mt-4 text-center">Servicio de Envío</h2>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 pb-5">
+              <div class="h-100 py-5 services-icon-wap shadow">
+                  <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                  <h2 class="h5 mt-4 text-center">Devoluciones</h2>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 pb-5">
+              <div class="h-100 py-5 services-icon-wap shadow">
+                  <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                  <h2 class="h5 mt-4 text-center">Promociones</h2>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 pb-5">
+              <div class="h-100 py-5 services-icon-wap shadow">
+                  <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                  <h2 class="h5 mt-4 text-center">Servicio las 24 horas</h2>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- End Section -->
+
+
+<section class="buscar">
+  <div class="container">
+  <div class="row text-center pt-5 pb-3">
+    <p><h3>Buscar por Categorías</h3></p>
+      <form class="form-inline">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>Seleccione una opción</option>
+          <option value="1">Acción</option>
+          <option value="2">Animación</option>
+          <option value="3">Aventura</option>
+          <option value="4">Bélico Guerra</option>
+          <option value="5">Biográfia</option>
+          <option value="6">Ciencia Ficción</option>
+          <option value="7">Comedia</option>
+          <option value="8">Crimen</option>
+          <option value="9">Documentales</option>
+          <option value="10">Drama</option>
+          <option value="11">Familiar</option>
+          <option value="12">Fantasía</option>
+          <option value="13">Misterio</option>
+          <option value="14">Romance</option>
+          <option value="15">Terror</option>
+          <option value="16">Thriller</option>
+        </select>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
 
 
           <section>
             <div class="container">
-              <p class="h2">Top 10</p>
-              <div class=".col-xs-6 .col-sm-4">
+              <div class="row text-center pt-5 pb-3">
+              <p class="h2">Los más leídos del 2022</p>
                 <table class="table">
                   <thead class="thead-dark">
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>Harry Potter Series (saga)</td>
-                      <td>J. K. Rowling</td>
+                      <td>Después de Diciembre</td>
+                      <td>Joana Marcus</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
-                      <td>El ingenioso hidalgo Don Quijote de la Mancha</td>
-                      <td>Miguel de Cervantes Saavedra</td>
+                      <td>Lejos de Luisiana</td>
+                      <td>Luz Gabas</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
-                      <td>El ingenioso hidalgo Don Quijote de la Mancha</td>
-                      <td>Miguel de Cervantes Saavedra</td>
+                      <td>Todo Arde</td>
+                      <td>Juan Gomez Jurado</td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
-                      <td>El principito</td>
-                      <td>Antoine De Saint-Exupéry</td>
+                      <td>Historias de Mujeres Casadas</td>
+                      <td>Cristina Campos</td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
-                      <td>El código Da Vinci</td>
-                      <td>Dan Brown</td>
+                      <td>Fuego y Sangre</td>
+                      <td>George R.R. Martin Y Doug Wheatley</td>
                     </tr>
-                    <th scope="row">6</th>
-                    <td>El Señor de los Anillos(saga)</td>
-                    <td>J.R.R. Tolkein</td>
-                  </tr>
-                  <th scope="row">7</th>
-                    <td>El Alquimista</td>
-                    <td>Paulo Coelho</td>
-                  </tr>
-                  <th scope="row">8</th>
-                  <td>Cien años de soledad</td>
-                  <td>Gabriel García Marquez</td>
-                </tr>
-                <th scope="row">9</th>
-                <td>El Perfume</td>
-                <td>Patrik Süskind</td>
-              </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Todo va a Mejorar</td>
+                      <td>Almudena Grandes</td>
+                    </tr>
+                    <th scope="row">7</th>
+                    <td>Se tiene que morir mucha gente</td>
+                    <td>Victoria Martin De La Cova</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>El Metal Perdido</td>
+                      <td>Brandon Sanderson</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Las Madres</td>
+                      <td>Carmen Mola</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Revolución</td>
+                      <td>Arturo Perez Reverte</td>
+                    </tr>                    
                   </tbody>
                 </table>
               </div>
             </div>
+            </div>
           </section>          
 
           <section class="Newsletter">
+            <div class="row text-center pt-5 pb-3">
             <form class="form" action="#" method="post" target="_blank">
               <h3> Suscríbete a nuestro boletín</h3>
               <div class="form-copy">
@@ -152,44 +339,104 @@
               </div>
             </div>
           </form>  
+        </div>
         </section>    
 
-    <footer class="footer">
-      <div class="container_fluid">      
-          <div class="row" >
-              <div class="col-xs-12 col-md-6 col-lg-3">
-              <img src="img/logotipo-blanco.svg" alt="Logotipo" width="294" height="82">
+
+
+    <!-- Start Footer -->
+    <footer class="bg" id="footer">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-md-4 pt-4">
+                  <h2 class="h2 text-success border-bottom pb-0 border-light logo"><img src="img/logo.svg" alt="logotipo" href="http://www.index.html" class="logo d-inline-block align-text-top"  width="220px";
+                    height= "55px"></h2>
+                  <ul class="list-unstyled text-light footer-link-list">
+                      <li>
+                          <i class="fas fa-map-marker-alt fa-fw"></i>
+                          Argentina
+                      </li>
+                      <li>
+                          <i class="fa fa-phone fa-fw"></i>
+                          <a class="text-decoration-none" href="tel:+5492915736215">0-800-333-6323</a>
+                      </li>
+                      <li>
+                          <i class="fa fa-envelope fa-fw"></i>
+                          <a class="text-decoration-none" href="mailto:info@company.com">info@magic_book.com</a>
+                      </li>
+                  </ul>
               </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                  <P class="h3">Legal</P>
-                  <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Condiciones</a></div>
-                  <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Política de cookies</a></div>
-                  <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Términos de servicio</a></div>
-                  <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Asóciate con nosotros</a></div>
-                </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-                <P class="h3">Explorar</P>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Categorías</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Autores</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Colecciones</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Bestsellers</a></div>
-             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <P class="h3">Ayuda</P>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Centro de ayuda</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Informar de un problema</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "#">Sugerencias de edición</a></div>
-                <div class="mb-2"><a class="text-white text-decoration-none" href = "contacto.html">Contacto</a></div>
-                <div class = "col-xs-12">
-                </div>
-                </div>
-                </div><p class="h6 text-left pt-4">Copyright - All Rights Reserved ©2022</p></div>         
-    </div>   
-    </footer> 
-   
+
+              <div class="col-md-4 pt-4">
+                  <h2 class="h2 text-light border-bottom pb-3 border-light">Legal</h2>
+                  <ul class="list-unstyled text-light footer-link-list">
+                      <li><a class="text-decoration-none" href="#">Aviso legal</a></li>
+                      <li><a class="text-decoration-none" href="#">Política de privacidad</a></li>
+                      <li><a class="text-decoration-none" href="#">Política de cookies</a></li>
+                      <li><a class="text-decoration-none" href="#">Política de calidad</a></li>
+                      <li><a class="text-decoration-none" href="#">Accesorios</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-md-4 pt-4">
+                  <h2 class="h2 text-light border-bottom pb-3 border-light">Info</h2>
+                  <ul class="list-unstyled text-light footer-link-list">
+                      <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
+                      <li><a class="text-decoration-none" href="quienes_somos.html">Nosotros</a></li>
+                      <li><a class="text-decoration-none" href="libreria.html">Librería</a></li>
+                      <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                      <li><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="row text-light mb-4">
+              <div class="col-12 mb-3">
+                  <div class="w-100 my-3 border-top border-light"></div>
+              </div>
+              <div class="col-auto me-auto">
+                  <ul class="list-inline text-left footer-icons">
+                      <li class="list-inline-item border border-light rounded-circle text-center">
+                          <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                      </li>
+                      <li class="list-inline-item border border-light rounded-circle text-center">
+                          <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                      </li>
+                      <li class="list-inline-item border border-light rounded-circle text-center">
+                          <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                      </li>
+                      <li class="list-inline-item border border-light rounded-circle text-center">
+                          <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="w-100 bg-black py-3">
+          <div class="container">
+              <div class="row pt-2">
+                  <div class="col-12">
+                      <p class="text-left text-light">
+                        Copyright - Todos los Derechos Reservados ©2022
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+  <!-- End Footer -->
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
 crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>

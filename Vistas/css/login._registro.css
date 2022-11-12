@@ -1,0 +1,67 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("../img/fondoRegistroUsuario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo{
+    margin: -103px 1px;
+    width: 436px;
+    height: 344px;
+}
+
+.row{
+    background-color: #2C4B4D;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #2C4B4D;
+}
+
+#boton{
+    background-color: #000000;
+    border-color: #2C4B4D;
+}
+
+#boton2{
+    color: #000000;
+}
+
+#datos{
+    margin: 8px;
+}
+
+#top, #base, #base2{
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+
+@media(max-width:600px){
+    .body{
+    display: flex;
+      width: 100%;
+    }
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+    }
