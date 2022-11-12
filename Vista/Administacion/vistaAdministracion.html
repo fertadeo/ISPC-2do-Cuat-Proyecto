@@ -18,49 +18,46 @@
         <div class="container-fluid">
           <a class="navbar-brand"> Magic Book Library - Administración </a>
           <form class="d-flex">
-            <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search">
+            <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" required>
             <button class="btn btn-magic" type="submit">Buscar</button>
           </form>
         </div>
       </nav>
 <div class="table">
-
-
 </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Titulo</th>
-            <th scope="col">Autor</th>
-            <th scope="col">Disponibilidad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>El poder del ahora</td>
-            <td> Eckhart Tolle</td>
-            <td>En stock - 5 U.</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>El retrato de Dorian Grey</td>
-            <td>Oscar Wilde</td>
-            <td>Fuera de stock</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td >Los Miserables</td>
-            <td > Víctor Hugo </td>
-            <td>En stock - 3 U.</td>
-          </tr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Disponibilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>El poder del ahora</td>
+      <td> Eckhart Tolle</td>
+      <td>En stock - 5 U.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>El retrato de Dorian Grey</td>
+      <td>Oscar Wilde</td>
+      <td>Fuera de stock</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Los Miserables</td>
+      <td > Víctor Hugo </td>
+      <td>En stock - 3 U.</td>
+    </tr>
 
-        </tbody>
+  </tbody>
 
-      </table>
-  <div class="botonesCategoria">
-    
+</table>
+<div class="botonesCategoria">
 
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -78,16 +75,46 @@
 
   <div class="form"> 
 
-    <input id="input-validation" class="form-input" type="text" placeholder="Escribe algo...">
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
+    <input class="form-input" type="search" placeholder="Escribe algo..." required>
 
-    <button type="submit" class="btn btn-magic" > Buscar </button>
+    <button type="submit" class="btn btn-magic" aria-label="search" > Buscar </button>
     <button type="submit" class="btn btn-magic" > Modificar </button>
   </div>
 
 
+    <div class="footer mt-4 p-3">
+      <div>
+
+        <a href="./politica_de_legalidad.html" target="_blank">
+          <p>Legal warning</p>
+        </a> 
+        <a href="./politica_de_privacidad.html" target="_blank">
+          <p>Privacy policy</p>
+        </a>
+        <a href="./cookies.html" target="_blank">
+          <p>Cookies Policy</p>
+        </a>
+        <a href="#">
+          <p>Quality Policy</p>
+        </a>
+      </div>
+      
+      <img src="../Login/img/magic_book_round_logo.png" alt="logo" class="logo-img">
+
+
+      <div>
+        <a href="./contacto.html" target="_blank" >
+          <p>Contact</p>
+        </a>
+        <a href="#">
+          <p>Location</p>
+        </a>
+        <a href="#">
+          <p>FAQs</p>
+        </a>
+      </div>
+
+    </div>
 
 
 
