@@ -13,3 +13,14 @@ class Administrador: #Meri
     def puesto(self):
         pass
 
+    def cargarLibros(self):
+        pass
+
+    def libros(self):
+        pass
+    
+    def editarLibro(self):
+        pass
+
+    def mostrarLibros(self):
+        pass

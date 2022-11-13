@@ -13,3 +13,13 @@ class Socio:
     def estado(self):
         pass
 
+    def alquilar(self):
+        pass
+
+    def pagar(self):
+        pass
+    
+    def devolver(self):
+        pass
+
+   
