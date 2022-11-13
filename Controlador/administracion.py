@@ -1,6 +1,9 @@
-class Administrador: #Meri
+class Administrador: 
+
+    Puesto = "admin"
+
     def __init__(self, puesto):
-        self.puesto = puesto
+        self.Puesto = puesto
 
     @property
     def puesto(self):

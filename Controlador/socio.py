@@ -13,3 +13,4 @@ class Socio:
     def estado(self):
         pass
 
+
