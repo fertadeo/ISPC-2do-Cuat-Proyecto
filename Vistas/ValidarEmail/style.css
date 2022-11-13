@@ -1,0 +1,46 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #3B5B5E;
+    color: #ffffff;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.nav-link {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  color:white;
+  border: white;
+  }
+
+.boton {
+    background-color: #2C4B4D;
+}
+
+.encabezado {
+    background-color: #BEA573;
+}
+
+
+.ColorNav {
+    background-color: #BEA573;
+}
+
+
+.ColorFuente {
+    color: #ffffff;
+}
+.container_carrusel{
+    overflow: hidden;
+}
