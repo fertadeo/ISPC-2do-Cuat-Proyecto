@@ -1,1 +1,1 @@
-Equipo Back Fer, Edu y Meri
+Equipo Back Fer, Edu, Caro y Meri
