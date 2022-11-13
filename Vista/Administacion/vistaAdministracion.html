@@ -18,7 +18,7 @@
         <div class="container-fluid">
           <a class="navbar-brand"> Magic Book Library - Administración </a>
           <form class="d-flex">
-            <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" required>
+            <input class="form-control me-4" type="search" placeholder="Buscar" aria-label="Search" maxlength="100" required>
             <button class="btn btn-magic" type="submit">Buscar</button>
           </form>
         </div>
@@ -74,45 +74,35 @@
   </div>
 
   <div class="form"> 
+    <label for="buscar"> </label>
+    <input id="buscar" class="form-input" type="search" placeholder="Buscar clientes o stock de libros" maxlength="100" required>
 
-    <input class="form-input" type="search" placeholder="Escribe algo..." required>
-
-    <button type="submit" class="btn btn-magic" aria-label="search" > Buscar </button>
+    <input type="submit" class="btn btn-magic" value="Buscar">  
     <button type="submit" class="btn btn-magic" > Modificar </button>
   </div>
 
 
-    <div class="footer mt-4 p-3">
-      <div>
+  <div class="footer">
+    <div>
+      <br>
+      <a href="../Administacion/politica_de_legalidad.html" target="_blank" rel="nonopener noreferrer"><p>Política de Legalidad</p></a>
+      <a  href="../Administacion/politica_de_privacidad.html" target="_blank" rel="nonopener noreferrer"><p>Politica de privacidad</p></a>
+      <a  href="../Administacion/cookies.html" target="_blank" rel="nonopener noreferrer"><p>Política de Cookies</p></a>
+    </br>
+    </div>
 
-        <a href="./politica_de_legalidad.html" target="_blank">
-          <p>Legal warning</p>
-        </a> 
-        <a href="./politica_de_privacidad.html" target="_blank">
-          <p>Privacy policy</p>
-        </a>
-        <a href="./cookies.html" target="_blank">
-          <p>Cookies Policy</p>
-        </a>
-        <a href="#">
-          <p>Quality Policy</p>
-        </a>
-      </div>
-      
-      <img src="../Login/img/magic_book_round_logo.png" alt="logo" class="logo-img">
+    <div>
+     <img src="../Administacion/img/magic_book_round_logo.png" class="logo-img"  alt="Logo Magic Book Libray.png">    
+    </div>
 
 
-      <div>
-        <a href="./contacto.html" target="_blank" >
-          <p>Contact</p>
-        </a>
-        <a href="#">
-          <p>Location</p>
-        </a>
-        <a href="#">
-          <p>FAQs</p>
-        </a>
-      </div>
+    <div>
+      <br>
+    <a  href="./contacto.html" target="_blank" rel="nonopener noreferrer"><p>Contacto</p></a>
+    <a  href="#" target="_blank" rel="nonopener noreferrer"><p>Ayuda</p></a>
+    <a  href="#" target="_blank" rel="nonopener noreferrer"><p>Preguntas frecuentes</p></a>
+      </br>
+  </div>
 
     </div>
 
