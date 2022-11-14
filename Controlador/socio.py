@@ -10,8 +10,8 @@ class Socio:
     def estado(self, estado):
         self._estado = estado
 
-    def estado(self):
-        pass
+    #def estado(self):
+    #    pass
 
     def alquilar(self):
         pass
