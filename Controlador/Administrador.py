@@ -10,16 +10,16 @@ class Administrador: #Meri
     def puesto(self, puesto):
         self._puesto = puesto
 
-    def puesto(self):
-        pass
+   # def puesto(self):
+    #    pass
 
     def cargarLibros(self):
         pass
 
-    def libros(self):
+    def eliminarlibros(self):
         pass
     
-    def editarLibro(self):
+    def editarLibros(self):
         pass
 
     def mostrarLibros(self):
